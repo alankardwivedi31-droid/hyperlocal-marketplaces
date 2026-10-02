@@ -1,0 +1,1185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusKart - Hyperlocal Campus Marketplace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-box">CK</span>
+
+                <span class="logo-text">
+                    Campus<span>Kart</span>
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#vendors">Vendors</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#list-business">List Your Business</a>
+
+            </nav>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <div class="location-pill">
+                    <span class="location-dot"></span>
+                    Near your campus
+                </div>
+
+
+                <h1>
+                    Everything nearby.
+                    <span>One campus.</span>
+                    One place.
+                </h1>
+
+
+                <p class="hero-description">
+                    Discover trusted tiffin services, stationery shops,
+                    tailors, repair services and more around your college.
+                </p>
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <div class="search-icon">
+                        🔎
+                    </div>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search food, stationery, printing..."
+                    >
+
+                    <button id="searchBtn">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- QUICK SEARCH / TRY -->
+
+                <div class="quick-search">
+
+                    <span>Try:</span>
+
+                    <button class="quick-btn" data-search="food">
+                        Tiffin
+                    </button>
+
+                    <button class="quick-btn" data-search="stationery">
+                        Stationery
+                    </button>
+
+                    <button class="quick-btn" data-search="printing">
+                        Printing
+                    </button>
+
+                    <button class="quick-btn" data-search="repair">
+                        Repair
+                    </button>
+
+                </div>
+
+
+                <!-- TRUST -->
+
+                <div class="hero-trust">
+
+                    <div class="trust-avatars">
+
+                        <div class="avatar avatar-one">
+                            👨🏻‍🎓
+                        </div>
+
+                        <div class="avatar avatar-two">
+                            👩🏻‍🎓
+                        </div>
+
+                        <div class="avatar avatar-three">
+                            🧑🏻‍🎓
+                        </div>
+
+                        <div class="avatar avatar-four">
+                            +
+                        </div>
+
+                    </div>
+
+
+                    <div class="trust-copy">
+
+                        <strong>
+                            Students are discovering local
+                        </strong>
+
+                        <span>
+                            Trusted by campus communities
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="hero-visual">
+
+                <div class="hero-image-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85"
+                        alt="College students"
+                    >
+
+                    <div class="hero-rating">
+                        ⭐ 4.9
+                        <small>Campus rated</small>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card food-floating">
+
+                    <div class="floating-icon orange-icon">
+                        🍱
+                    </div>
+
+                    <div>
+                        <strong>Fresh Tiffin</strong>
+                        <span>From ₹70/day</span>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card stationery-floating">
+
+                    <div class="floating-icon blue-icon">
+                        📚
+                    </div>
+
+                    <div>
+                        <strong>Stationery</strong>
+                        <span>0.4 km away</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories-section" id="categories">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    EXPLORE
+                </span>
+
+                <h2>
+                    What do you need <span>today?</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Find useful local services made for everyday student life.
+            </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+            <!-- FOOD -->
+
+            <div
+                class="category-card category-main"
+                data-category="food"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85"
+                    alt="Tiffin and Food"
+                >
+
+
+                <div class="food-overlay">
+
+                    <div>
+
+                        <span class="popular-label">
+                            01 · MOST POPULAR
+                        </span>
+
+                        <h3>
+                            Tiffin & Food
+                        </h3>
+
+                        <p>
+                            Fresh meals around campus
+                        </p>
+
+                    </div>
+
+
+                    <button class="category-arrow">
+                        ↗
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATIONERY -->
+
+            <div
+                class="category-card small-card blue-card"
+                data-category="stationery"
+            >
+
+                <div class="card-top">
+
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <div class="category-icon">
+                        📚
+                    </div>
+
+                </div>
+
+
+                <div class="small-card-content">
+
+                    <h3>
+                        Stationery
+                    </h3>
+
+                    <p>
+                        Books, notes & supplies
+                    </p>
+
+                </div>
+
+
+                <button class="small-arrow">
+                    ↗
+                </button>
+
+            </div>
+
+
+            <!-- PRINTING -->
+
+            <div
+                class="category-card small-card printing-card"
+                data-category="printing"
+            >
+
+                <div class="card-top">
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <div class="category-icon">
+                        🖨️
+                    </div>
+
+                </div>
+
+
+                <div class="small-card-content">
+
+                    <h3>
+                        Printing
+                    </h3>
+
+                    <p>
+                        Print & photocopy
+                    </p>
+
+                </div>
+
+
+                <button class="small-arrow">
+                    ↗
+                </button>
+
+            </div>
+
+
+            <!-- TAILOR -->
+
+            <div
+                class="category-card small-card tailor-card"
+                data-category="tailor"
+            >
+
+                <div class="card-top">
+
+                    <span class="category-number">
+                        04
+                    </span>
+
+                    <div class="category-icon">
+                        ✂️
+                    </div>
+
+                </div>
+
+
+                <div class="small-card-content">
+
+                    <h3>
+                        Tailor
+                    </h3>
+
+                    <p>
+                        Stitching & alterations
+                    </p>
+
+                </div>
+
+
+                <button class="small-arrow">
+                    ↗
+                </button>
+
+            </div>
+
+
+            <!-- REPAIR -->
+
+            <div
+                class="category-card small-card repair-card"
+                data-category="repair"
+            >
+
+                <div class="card-top">
+
+                    <span class="category-number">
+                        05
+                    </span>
+
+                    <div class="category-icon">
+                        🔧
+                    </div>
+
+                </div>
+
+
+                <div class="small-card-content">
+
+                    <h3>
+                        Tech Repair
+                    </h3>
+
+                    <p>
+                        Phone & laptop repair
+                    </p>
+
+                </div>
+
+
+                <button class="small-arrow">
+                    ↗
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VENDORS ================= -->
+
+    <section class="vendors-section" id="vendors">
+
+        <div class="vendors-heading">
+
+            <div>
+
+                <span class="section-label">
+                    LOCAL VENDORS
+                </span>
+
+                <h2>
+                    Popular around campus
+                </h2>
+
+                <p>
+                    Compare local services, prices and distance before choosing.
+                </p>
+
+            </div>
+
+
+            <div class="vendor-controls">
+
+                <select id="sortSelect">
+
+                    <option value="default">
+                        Sort: Recommended
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                    <option value="distance">
+                        Nearest First
+                    </option>
+
+                    <option value="price">
+                        Lowest Price
+                    </option>
+
+                </select>
+
+
+                <button id="nearMeBtn" class="near-btn">
+                    📍 Near Me
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- VENDOR GRID -->
+
+        <div class="vendor-grid" id="vendorGrid">
+
+
+            <!-- VENDOR 1 -->
+
+            <article
+                class="vendor-card"
+                data-name="Sharma Tiffin Service"
+                data-category="food"
+                data-rating="4.8"
+                data-distance="0.6"
+                data-price="70"
+            >
+
+                <div class="vendor-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85"
+                        alt="Tiffin"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="vendor-content">
+
+                    <div class="vendor-top">
+
+                        <span class="vendor-category">
+                            FOOD
+                        </span>
+
+                        <span class="vendor-distance">
+                            0.6 km
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Sharma Tiffin Service
+                    </h3>
+
+
+                    <p>
+                        Fresh home-style lunch and dinner for students.
+                    </p>
+
+
+                    <div class="vendor-info">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <span>
+                            ₹70/day
+                        </span>
+
+                    </div>
+
+
+                    <div class="vendor-actions">
+
+                        <button
+                            class="details-btn"
+                            data-vendor="Sharma Tiffin Service"
+                        >
+                            View Details
+                        </button>
+
+                        <button
+                            class="map-btn"
+                            data-vendor="Sharma Tiffin Service"
+                        >
+                            📍
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VENDOR 2 -->
+
+            <article
+                class="vendor-card"
+                data-name="Campus Stationers"
+                data-category="stationery"
+                data-rating="4.9"
+                data-distance="0.4"
+                data-price="10"
+            >
+
+                <div class="vendor-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&w=800&q=85"
+                        alt="Stationery"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="vendor-content">
+
+                    <div class="vendor-top">
+
+                        <span class="vendor-category">
+                            STATIONERY
+                        </span>
+
+                        <span class="vendor-distance">
+                            0.4 km
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Campus Stationers
+                    </h3>
+
+
+                    <p>
+                        Notes, files, pens and all your college supplies.
+                    </p>
+
+
+                    <div class="vendor-info">
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                        <span>
+                            From ₹10
+                        </span>
+
+                    </div>
+
+
+                    <div class="vendor-actions">
+
+                        <button
+                            class="details-btn"
+                            data-vendor="Campus Stationers"
+                        >
+                            View Details
+                        </button>
+
+                        <button
+                            class="map-btn"
+                            data-vendor="Campus Stationers"
+                        >
+                            📍
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VENDOR 3 -->
+
+            <article
+                class="vendor-card"
+                data-name="Perfect Fit Tailors"
+                data-category="tailor"
+                data-rating="4.6"
+                data-distance="1.1"
+                data-price="50"
+            >
+
+                <div class="vendor-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=800&q=85"
+                        alt="Tailor"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="vendor-content">
+
+                    <div class="vendor-top">
+
+                        <span class="vendor-category">
+                            TAILOR
+                        </span>
+
+                        <span class="vendor-distance">
+                            1.1 km
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Perfect Fit Tailors
+                    </h3>
+
+
+                    <p>
+                        Quick alterations and stitching services.
+                    </p>
+
+
+                    <div class="vendor-info">
+
+                        <span>
+                            ⭐ 4.6
+                        </span>
+
+                        <span>
+                            From ₹50
+                        </span>
+
+                    </div>
+
+
+                    <div class="vendor-actions">
+
+                        <button
+                            class="details-btn"
+                            data-vendor="Perfect Fit Tailors"
+                        >
+                            View Details
+                        </button>
+
+                        <button
+                            class="map-btn"
+                            data-vendor="Perfect Fit Tailors"
+                        >
+                            📍
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VENDOR 4 -->
+
+            <article
+                class="vendor-card"
+                data-name="Quick Print Hub"
+                data-category="printing"
+                data-rating="4.7"
+                data-distance="0.7"
+                data-price="2"
+            >
+
+                <div class="vendor-image printer-image">
+
+                    <div class="printer-visual">
+                        🖨️
+                    </div>
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="vendor-content">
+
+                    <div class="vendor-top">
+
+                        <span class="vendor-category">
+                            PRINTING
+                        </span>
+
+                        <span class="vendor-distance">
+                            0.7 km
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Quick Print Hub
+                    </h3>
+
+
+                    <p>
+                        Fast printing, scanning and photocopy services.
+                    </p>
+
+
+                    <div class="vendor-info">
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                        <span>
+                            ₹2/page
+                        </span>
+
+                    </div>
+
+
+                    <div class="vendor-actions">
+
+                        <button
+                            class="details-btn"
+                            data-vendor="Quick Print Hub"
+                        >
+                            View Details
+                        </button>
+
+                        <button
+                            class="map-btn"
+                            data-vendor="Quick Print Hub"
+                        >
+                            📍
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- VENDOR 5 -->
+
+            <article
+                class="vendor-card"
+                data-name="Campus Tech Repair"
+                data-category="repair"
+                data-rating="4.5"
+                data-distance="1.0"
+                data-price="100"
+            >
+
+                <div class="vendor-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=85"
+                        alt="Laptop repair"
+                    >
+
+                    <span class="verified">
+                        ✓ Verified
+                    </span>
+
+                    <button class="favorite">
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <div class="vendor-content">
+
+                    <div class="vendor-top">
+
+                        <span class="vendor-category">
+                            REPAIR
+                        </span>
+
+                        <span class="vendor-distance">
+                            1.0 km
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Campus Tech Repair
+                    </h3>
+
+
+                    <p>
+                        Laptop, mobile and electronic repair services.
+                    </p>
+
+
+                    <div class="vendor-info">
+
+                        <span>
+                            ⭐ 4.5
+                        </span>
+
+                        <span>
+                            From ₹100
+                        </span>
+
+                    </div>
+
+
+                    <div class="vendor-actions">
+
+                        <button
+                            class="details-btn"
+                            data-vendor="Campus Tech Repair"
+                        >
+                            View Details
+                        </button>
+
+                        <button
+                            class="map-btn"
+                            data-vendor="Campus Tech Repair"
+                        >
+                            📍
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="how-section" id="how-it-works">
+
+        <div class="how-heading">
+
+            <span class="section-label">
+                SIMPLE PROCESS
+            </span>
+
+            <h2>
+                Find what you need in 4 steps
+            </h2>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon green-step">
+                    🔎
+                </div>
+
+                <h3>
+                    Search
+                </h3>
+
+                <p>
+                    Search for the product or service you need.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon blue-step">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Filter
+                </h3>
+
+                <p>
+                    Filter vendors by category, price and distance.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon orange-step">
+                    📋
+                </div>
+
+                <h3>
+                    Compare
+                </h3>
+
+                <p>
+                    Check ratings, prices, services and details.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-icon yellow-step">
+                    📞
+                </div>
+
+                <h3>
+                    Connect
+                </h3>
+
+                <p>
+                    Contact the vendor or get directions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section" id="list-business">
+
+        <div class="cta-content">
+
+            <span class="cta-label">
+                FOR LOCAL BUSINESSES
+            </span>
+
+            <h2>
+                Have a business near campus?
+            </h2>
+
+            <p>
+                Reach hundreds of students looking for your products
+                and services every day.
+            </p>
+
+            <button class="cta-btn" id="listBusinessBtn">
+                List Your Business →
+            </button>
+
+        </div>
+
+
+        <div class="cta-shapes">
+
+            <div class="cta-circle circle-one"></div>
+
+            <div class="cta-circle circle-two"></div>
+
+            <div class="cta-square"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <span class="logo-box">
+                        CK
+                    </span>
+
+                    <span>
+                        CampusKart
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Your campus. Your local market.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#vendors">
+                    Vendors
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 CampusKart. Built for students.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
